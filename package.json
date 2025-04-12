@@ -1,28 +1,16 @@
 {
-  "name": "backend",
+  "name": "youtube",
   "version": "1.0.0",
-  "description": "a basic app to deploy",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bansivachhani/youtube-backend.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "node",
+    "js",
+    "backend",
     "chai"
   ],
-  "author": "bansi vachhani",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bansivachhani/youtube-backend/issues"
-  },
-  "homepage": "https://github.com/bansivachhani/youtube-backend#readme",
-  "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0"
-  }
+  "author": "Bansi Vachhani",
+  "license": "ISC"
 }
