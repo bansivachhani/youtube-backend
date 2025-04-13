@@ -20,9 +20,9 @@ const uploadOnCloudinary = async (localFilePath) => {
     }
     catch(error)
     {
-        fs.unlinkSync(localFilePath) //delete the file from local storage
-
-
+        fs.unlinkSync(localFilePath)
+         //delete the file from local storage
+         return null
     }
 }
 
