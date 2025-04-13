@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import CookieParser from 'cookieparser';
+import cookieParser from "cookie-parser"; // ✅ use lowercase module name
+
 
 const app = express();
 
