@@ -1,22 +1,24 @@
 import {Router} from 'express';
 import { loginUser, logOutUser, registerUser } from '../controllers/user.controller.js';
 import { upload } from  '../middlewares/multer.middleware.js';
-import jwt from 'jsonwebtoken'
+import { verifyJWT } from '../middlewares/auth.middleware.js';
+import jwt from 'jsonwebtoken';
 
 const router = Router()
 
 router.route("/register").post(
     upload.fields([
         {
-            name:"avatar",
-            maxCount:1
-        },
+            name: "avatar",
+            maxCount: 1
+        }, 
         {
-            name:"coverImage",
-            maxCount:1
+            name: "coverImage",
+            maxCount: 1
         }
     ]),
-    registerUser)
+    registerUser
+)
 
 router.route("/login").post(loginUser)
 
